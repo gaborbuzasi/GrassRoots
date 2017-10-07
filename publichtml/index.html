@@ -1,15 +1,60 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <title>GrassRoots Platform</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Oswald" rel="stylesheet">
-    </head>
-    <body>
-       <div class="title">
-            <h2>GrassRoots</h2>
-            <h3>platform to give customers more control of charity donations</h3>    
+
+<head>
+    <title>GrassRoots Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="successAlert" class="alert alert-warning alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Holy guacamole!</strong> Please enter your verification code sent to your mobile!
+    </div>
+    <div id="verifiedAlert" class="alert alert-success alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Holy guacamole!</strong> You have successfully verified your account!
+    </div>
+    <div id="errorVerifiedAlert" class="alert alert-danger alert-dismissible fade show" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <strong>Holy guacamole!</strong> You have failed to verify your account!
+    </div>
+    <div class="title">
+        <h2>GrassRoots</h2>
+        <h3>platform to give customers more control of charity donations</h3>
+        <div id="registration" class="input-group input-group-lg">
+            <span class="input-group-addon" id="phoneIcon">Phone: (+44)</span>
+            <input id="phoneNum" type="tel" class="form-control" placeholder="Phone number" aria-describedby="phoneIcon">
+            <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button" onclick="sendVerificationMessage()">Register!</button>
+            </span>
         </div>
-    </body>
+        <div id="numberVerification" class="input-group input-group-lg">
+            <span class="input-group-addon" id="numIcon">Verification code: </span>
+            <input id="number" type="number" class="form-control" placeholder="Verification number" aria-describedby="numIcon">
+            <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button" onclick="validate()">Validate!</button>
+            </span>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>

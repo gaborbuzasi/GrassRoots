@@ -1,20 +1,27 @@
+body {
+    background-image: url("../img/index_bg.jpg");
+}
+
 .title {
-  position: absolute;
-  width: 600px;
-  /*height: 200px;*/
-  z-index: 15;
-  top: 50%;
-  left: 50%;
-  margin: -100px 0 0 -150px;
-  background: rgba(100, 100, 0, 0.5);
+  background: rgba(46, 204, 113, 0.9);
   text-align: center;
   border-radius: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
 }
 
 .title > h2 {
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
 }
 
 .title > h3 {
+    margin-top: 5px;
     font-family: 'Oswald', sans-serif;
+    margin-bottom: 30px;
 }
