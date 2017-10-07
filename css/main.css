@@ -1,0 +1,9 @@
+.title {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title > h2 {
+    font-family: 'Oswald', sans-serif;
+}
