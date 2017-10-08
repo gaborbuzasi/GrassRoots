@@ -106,11 +106,25 @@
 
         }
 
+        function initialiseWeb3() {
+            if (typeof web3 !== 'undefined') {
+                web3 = new Web3(web3.currentProvider);
+            } else {
+                // set the provider you want from Web3.providers
+                web3 = new Web3(new Web3.providers.HttpProvider("http://192.168.43.180:8545"));
+            }
+        }
+
         function genRand() {
             return Math.floor(Math.random() * 89999 + 10000);
         }
 
         var verificationNumber = genRand();
+
+        initialiseWeb3();
+
+        var accounts = web3.eth.accounts;
+        console.log(JSON.stringify(accounts)); 
     }
 
     var app = angular.module('customerPortal');

@@ -1,5 +1,7 @@
 <div id="myVotes">
-    <h3><p><span class="pull-left">My Vote choices</span></p></h3>
+    <h3>
+        <p><span class="pull-left">My Vote choices</span></p>
+    </h3>
     <div class="row" ng-repeat="company in $ctrl.votes">
         <h4>{{company.name}} <span class="pull-right">Token balance: {{company.voteBalance}} votes</span></h4>
         <div class="col-sm-6 col-md-4" ng-repeat="vote in company.charities">
