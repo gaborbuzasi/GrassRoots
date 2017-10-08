@@ -121,10 +121,10 @@
 
         var verificationNumber = genRand();
 
-        initialiseWeb3();
+        //initialiseWeb3();
 
-        var accounts = web3.eth.accounts;
-        console.log(JSON.stringify(accounts)); 
+        //var accounts = web3.eth.accounts;
+        //console.log(JSON.stringify(accounts)); 
     }
 
     var app = angular.module('customerPortal');
