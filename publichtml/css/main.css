@@ -26,6 +26,18 @@ body {
     margin-bottom: 30px;
 }
 
+#logo > h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+}
+
+#logo > h3 {
+    margin-top: 5px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 30px;
+}
+
 .logo {
     width: 200px;
     padding: 10px;
@@ -62,4 +74,9 @@ body {
   max-height:130px;
   width: auto;
   height: auto;
+}
+
+#registration {
+    margin-left: auto;
+    margin-right: auto;
 }
