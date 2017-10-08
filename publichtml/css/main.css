@@ -8,7 +8,7 @@ body {
   border-radius: 10px;
   position: relative;
   top: 50%;
-  transform: translateY(-50%);
+  /*transform: translateY(-50%);*/
   width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -24,4 +24,42 @@ body {
     margin-top: 5px;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 30px;
+}
+
+.logo {
+    width: 200px;
+    padding: 10px;
+    /*background-color: rgba(100, 0, 0, 0.5);*/
+    margin: 10px;
+}
+
+#myVotes > h3 {
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#myVotes > .row > h4 {
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#myVotes {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.caption {
+    background-color: rgba(46, 204, 113, 0.9) !important;
+}
+
+#myVotes img {
+  display: block;
+  max-width:230px;
+  max-height:130px;
+  width: auto;
+  height: auto;
 }
